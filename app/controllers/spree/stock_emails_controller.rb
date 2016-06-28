@@ -5,7 +5,7 @@ class Spree::StockEmailsController < ApplicationController
     redirect_to :back and return unless product
 
     stock_email = Spree::StockEmail.new
-    stock_email.email = spree_current_user ? spree_current_user.email : params[:stock_email][:email]
+    stock_email.email = params[:stock_email][:email]
     stock_email.product = product
 
     begin
