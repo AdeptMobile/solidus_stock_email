@@ -1,4 +1,6 @@
-#SpreeStockEmail
+#SolidusStockEmail
+
+This gem was ported to Solidus.
 
 Allow users to create notifications of when products are back in stock.
 
@@ -28,12 +30,12 @@ Here is a basic partial:
 Add spree_stock_email to your Gemfile:
 
 ```ruby
-gem 'spree_stock_email'
+gem 'solidus_stock_email'
 ```
 
 Bundle your dependencies and run the installation generator:
 
 ```shell
 bundle
-bundle exec rails g spree_stock_email:install
+bundle exec rails g solidus_stock_email:install
 ```

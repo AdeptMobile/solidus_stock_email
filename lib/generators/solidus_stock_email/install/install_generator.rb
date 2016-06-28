@@ -1,19 +1,11 @@
-module SpreeStockEmail
+module SolidusStockEmail
   module Generators
     class InstallGenerator < Rails::Generators::Base
 
       class_option :auto_run_migrations, :type => :boolean, :default => false
 
-      def add_javascripts
-        append_file 'app/assets/javascripts/store/all.js', "//= require store/spree_stock_email\n"
-      end
-
-      def add_stylesheets
-        inject_into_file 'app/assets/stylesheets/store/all.css', " *= require store/spree_stock_email\n", :before => /\*\//, :verbose => true
-      end
-
       def add_migrations
-        run 'bundle exec rake railties:install:migrations FROM=spree_stock_email'
+        run 'bundle exec rake railties:install:migrations FROM=solidus_stock_email'
       end
 
       def run_migrations

@@ -1,8 +1,8 @@
-module SpreeStockEmail
+module SolidusStockEmail
   class Engine < Rails::Engine
     require 'spree/core'
     isolate_namespace Spree
-    engine_name 'spree_stock_email'
+    engine_name 'solidus_stock_email'
 
     config.autoload_paths += %W(#{config.root}/lib)
 

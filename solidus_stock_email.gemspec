@@ -1,8 +1,8 @@
 # encoding: UTF-8
 Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
-  s.name        = 'spree_stock_email'
-  s.version     = '0.0.6'
+  s.name        = 'solidus_stock_email'
+  s.version     = '0.0.7'
   s.summary     = 'Send an email when a product is in stock.'
   s.description = 'Send an email when a product is in stock.'
   s.required_ruby_version = '>= 1.9.3'
@@ -16,7 +16,9 @@ Gem::Specification.new do |s|
   s.require_path = 'lib'
   s.requirements << 'none'
 
-  s.add_dependency 'spree_core', '~> 2.2.0'
+  solidus_version = [">= 1.0.6", "< 2"]
+
+  s.add_dependency "solidus_core", solidus_version
 
   s.add_development_dependency 'capybara', '~> 2.1'
   s.add_development_dependency 'coffee-rails'
