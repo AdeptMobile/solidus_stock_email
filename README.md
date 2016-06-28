@@ -30,7 +30,7 @@ Here is a basic partial:
 Add spree_stock_email to your Gemfile:
 
 ```ruby
-gem 'solidus_stock_email'
+gem 'solidus_stock_email', github: 'AdeptMobile/solidus_stock_email'
 ```
 
 Bundle your dependencies and run the installation generator:
