@@ -1,5 +1,8 @@
 class Spree::StockEmailsController < ApplicationController
 
+  #BM: added this line to try and remove auth token verification because of CDN 10/2/18
+  skip_before_action :verify_authenticity_token
+
   def create
     product = Spree::Product.find_by_id(params[:stock_email][:product])
     redirect_to :back and return unless product

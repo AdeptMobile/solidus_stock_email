@@ -2,7 +2,7 @@
 Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.name        = 'solidus_stock_email'
-  s.version     = '0.0.8'
+  s.version     = '0.0.9'
   s.summary     = 'Send an email when a product is in stock.'
   s.description = 'Send an email when a product is in stock.'
   s.required_ruby_version = '>= 1.9.3'
